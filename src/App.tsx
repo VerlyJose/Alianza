@@ -74,7 +74,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center gap-3 cursor-pointer" onClick={() => handleNavClick('#inicio')}>
           <img 
-            src="/logo_alianza.png" 
+            src="/public/images/logo_alianza.png" 
             alt="Alianza Logo" 
             className="w-12 h-12 object-contain"
           />
@@ -541,7 +541,7 @@ const Footer = () => {
           <div className="space-y-8">
             <div className="flex items-center gap-3">
               <img 
-                src="/logo_alianza.png" 
+                src="/public/images/logo_alianza.png" 
                 alt="Alianza Logo" 
                 className="w-10 h-10 object-contain"
               />
