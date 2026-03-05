@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-ajo-primary: #4F46E5;
+  --color-ajo-secondary: #10B981;
+  --color-ajo-accent: #F59E0B;
+  --color-ajo-bg: #0A0A0A; /* Darker for campaign feel */
+  --color-ajo-paper: #FAFAF9;
+}
+
+@layer base {
+  body {
+    @apply bg-ajo-bg text-white font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-display font-black tracking-tighter uppercase;
+  }
+}
+
+/* Layered Section Effect */
+.layered-section {
+  @apply sticky top-0 h-screen flex flex-col items-center justify-center overflow-hidden;
+}
+
+.text-stroke {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  color: transparent;
+}
+
+.campaign-title {
+  @apply text-[15vw] leading-[0.85] font-black uppercase tracking-tighter;
+}
+
+.section-padding {
+  @apply py-32 px-6 md:px-12 lg:px-24;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #4F46E5;
+  border-radius: 10px;
+}
